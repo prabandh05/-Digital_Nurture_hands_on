@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Local Files Sample</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <main class="container py-5">
+        <div class="p-5 bg-light rounded-3 border">
+            <h1 class="display-5 fw-bold">Local Bootstrap Setup</h1>
+            <p class="lead">This sample demonstrates Exercise 1.2 and 2.2 using downloaded Bootstrap files instead of CDN links.</p>
+            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#localModal">
+                <i class="bi bi-box-arrow-up-right me-2"></i>Open Local Modal
+            </button>
+        </div>
+    </main>
+
+    <div class="modal fade" id="localModal" tabindex="-1" aria-labelledby="localModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="localModalLabel">Local Bootstrap Bundle</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">This modal works after Bootstrap's local <code>bootstrap.bundle.min.js</code> file is available.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
