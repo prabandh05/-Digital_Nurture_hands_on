@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promo Video</title>
+
+    <script>
+
+        function ready() {
+            document.getElementById("status").innerHTML =
+                "Video ready to play";
+        }
+
+        window.onbeforeunload = function() {
+            return "Are you sure you want to leave?";
+        }
+
+    </script>
+
+</head>
+<body>
+
+<h2>Event Promo Video</h2>
+
+<video width="500" controls oncanplay="ready()">
+    <source src="media/promo.mp4" type="video/mp4">
+</video>
+
+<p id="status"></p>
+
+</body>
+</html>
