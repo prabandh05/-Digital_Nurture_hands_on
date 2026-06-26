@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises - Local Community Event Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-bar">
+            <a href="#events">Events</a>
+            <a href="#register">Register</a>
+            <a href="#debug">Debug</a>
+        </nav>
+        <section class="hero">
+            <p class="eyebrow">JavaScript Exercise Set</p>
+            <h1>Local Community Event Portal</h1>
+            <p>View upcoming events, filter by category or location, register dynamically, and simulate API communication.</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="panel controls" aria-labelledby="filtersTitle">
+            <h2 id="filtersTitle">Find Events</h2>
+            <div class="control-grid">
+                <label>
+                    Category
+                    <select id="categoryFilter" onchange="handleCategoryChange(event)">
+                        <option value="all">All categories</option>
+                        <option value="Music">Music</option>
+                        <option value="Workshop">Workshop</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Volunteer">Volunteer</option>
+                    </select>
+                </label>
+
+                <label>
+                    Location
+                    <select id="locationFilter">
+                        <option value="all">All locations</option>
+                        <option value="Central Park">Central Park</option>
+                        <option value="Community Hall">Community Hall</option>
+                        <option value="City Stadium">City Stadium</option>
+                        <option value="Ward Office">Ward Office</option>
+                    </select>
+                </label>
+
+                <label>
+                    Quick Search
+                    <input id="searchInput" type="search" placeholder="Type an event name">
+                </label>
+
+                <button id="loadAsyncBtn" type="button">Reload Mock API Events</button>
+            </div>
+            <p id="filterSummary" class="helper-text"></p>
+        </section>
+
+        <section id="events" class="panel" aria-labelledby="eventsTitle">
+            <div class="section-heading">
+                <h2 id="eventsTitle">Upcoming Events</h2>
+                <div id="spinner" class="spinner hidden" aria-label="Loading events"></div>
+            </div>
+            <div id="eventsContainer" class="events-grid"></div>
+        </section>
+
+        <section id="register" class="panel" aria-labelledby="registerTitle">
+            <h2 id="registerTitle">Register for an Event</h2>
+            <form id="registrationForm" novalidate>
+                <label>
+                    Name
+                    <input name="name" type="text" placeholder="Enter your name">
+                    <span class="error" data-error-for="name"></span>
+                </label>
+
+                <label>
+                    Email
+                    <input name="email" type="email" placeholder="name@example.com">
+                    <span class="error" data-error-for="email"></span>
+                </label>
+
+                <label>
+                    Event
+                    <select name="eventId" id="eventSelect">
+                        <option value="">Choose an event</option>
+                    </select>
+                    <span class="error" data-error-for="eventId"></span>
+                </label>
+
+                <button id="registerBtn" type="submit">Submit Registration</button>
+                <p id="formMessage" class="message" role="status"></p>
+            </form>
+        </section>
+
+        <section class="panel" aria-labelledby="objectsTitle">
+            <h2 id="objectsTitle">Object Entries and Formatted Events</h2>
+            <pre id="objectOutput"></pre>
+        </section>
+
+        <section id="debug" class="panel" aria-labelledby="debugTitle">
+            <h2 id="debugTitle">Debugging Notes</h2>
+            <ul>
+                <li>Open Chrome DevTools Console to see setup logs, registration steps, and fetch payloads.</li>
+                <li>Use the Network tab to inspect the mock API fetch and registration POST simulation.</li>
+                <li>Add breakpoints inside <code>registerUser()</code> or the form submit handler to inspect variables.</li>
+            </ul>
+            <p>Framework note: React or Vue can make larger portals easier to maintain by organizing UI into reusable state-driven components.</p>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
