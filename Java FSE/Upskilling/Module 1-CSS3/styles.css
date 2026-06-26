@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+
+/* Base reset and document styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body background uses a fallback color plus a local background image */
+body {
+    min-height: 100vh;
+    background-color: #eef7f6;
+    background-image:
+        linear-gradient(rgba(244, 251, 249, 0.92), rgba(244, 251, 249, 0.92)),
+        url("assets/community-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    color: #263238;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header styles */
+#mainHeader {
+    min-height: 72vh;
+    padding: 24px 7vw 72px;
+    background:
+        linear-gradient(135deg, rgba(0, 99, 102, 0.9), rgba(3, 145, 126, 0.72)),
+        url("assets/community-bg.svg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+/* Navigation menu styles */
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 12vh;
+}
+
+.site-nav a {
+    padding: 8px 12px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-nav a:link {
+    color: white;
+}
+
+.site-nav a:visited {
+    color: #d9fff5;
+}
+
+.site-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #fff6a8;
+}
+
+.site-nav a:active {
+    color: #ffd166;
+}
+
+/* Banner copy styles */
+.banner-content {
+    width: min(760px, 92vw);
+}
+
+.eyebrow {
+    margin-bottom: 10px;
+    color: #d9fff5;
+    font-size: 0.88rem;
+    font-style: italic;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+h1 {
+    max-width: 720px;
+    font-size: clamp(2.4rem, 6vw, 4.8rem);
+    font-weight: 800;
+    line-height: 1.05;
+}
+
+.hero-description {
+    max-width: 680px;
+    margin: 22px 0 28px;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.12rem;
+    line-height: 1.8;
+}
+
+/* Style for main CTA button */
+.cta-button {
+    display: inline-block;
+    border: 0;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 800;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #005fcc;
+}
+
+/* Main layout styles */
+main {
+    width: min(1120px, 92%);
+    margin: -38px auto 0;
+}
+
+.content-section {
+    margin-bottom: 34px;
+    padding: 28px 0;
+}
+
+/* Element selector styles all section headings */
+h2 {
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #006366, #42b883);
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding: 12px 18px;
+}
+
+/* Grouping selector applies shared text styling */
+h3,
+p {
+    color: #263238;
+    letter-spacing: 0;
+}
+
+/* Event card styles */
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.eventCard {
+    margin: 12px 0;
+    border: 2px solid rgba(0, 99, 102, 0.18);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.94);
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(31, 74, 70, 0.12);
+}
+
+.selected-card {
+    border-color: #007bff;
+    outline: 3px solid rgba(0, 123, 255, 0.22);
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 16px;
+    border-radius: 999px;
+    background-color: rgba(0, 123, 255, 0.12);
+    color: #00509d;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 4px 10px;
+}
+
+/* List styling section */
+.category-list {
+    list-style-position: inside;
+    list-style-type: square;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 18px 24px;
+}
+
+.category-list li {
+    margin: 8px 0;
+    padding: 6px 0;
+}
+
+/* Event image styles */
+.event-poster {
+    display: block;
+    width: min(680px, 70%);
+    max-height: 260px;
+    margin: 0 auto 18px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Table styling section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 12px 24px rgba(31, 74, 70, 0.12);
+}
+
+th,
+td {
+    border: 1px solid #bfd9d4;
+    padding: 14px;
+    text-align: center;
+}
+
+th {
+    background-color: #006366;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ecf8f6;
+}
+
+/* Form and outline styles */
+form {
+    display: grid;
+    gap: 12px;
+    width: min(520px, 100%);
+    border: 1px solid #bfd9d4;
+    border-radius: 8px;
+    background-color: white;
+    padding: 22px;
+}
+
+label {
+    font-weight: 700;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #a9c8c3;
+    border-radius: 6px;
+    font: inherit;
+    padding: 10px 12px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.selected-field {
+    outline: 3px solid rgba(0, 123, 255, 0.28);
+    border-color: #007bff;
+}
+
+/* Visibility comparison styles */
+.visibility-demo {
+    margin-top: 18px;
+    border-left: 4px solid #42b883;
+    background-color: rgba(255, 255, 255, 0.86);
+    padding: 16px;
+}
+
+.hidden-box {
+    visibility: hidden;
+}
+
+.none-box {
+    display: none;
+}
+
+/* Multi-column bulletin section */
+.news-article {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 22px;
+}
+
+.news-article p {
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 40px;
+    background-color: #263238;
+    color: white;
+    padding: 18px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+/* Responsive styles for tablets and phones */
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    #mainHeader {
+        min-height: 64vh;
+        padding: 18px 5vw 54px;
+    }
+
+    .site-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        margin-bottom: 8vh;
+    }
+
+    .site-nav a {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.12);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.35rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    main {
+        width: 94%;
+        margin-top: -24px;
+    }
+
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eventCard {
+        padding: 16px;
+    }
+
+    .event-poster {
+        width: 100%;
+        max-height: 180px;
+    }
+
+    table {
+        font-size: 0.88rem;
+    }
+
+    th,
+    td {
+        padding: 10px 6px;
+    }
+
+    .news-article {
+        column-count: 1;
+    }
+}

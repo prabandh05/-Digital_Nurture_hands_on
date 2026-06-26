@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Community event background">
+  <rect width="1600" height="1000" fill="#dff4ef"/>
+  <path d="M0 730 C220 640 360 760 560 690 C790 610 940 760 1160 670 C1360 590 1490 650 1600 610 L1600 1000 L0 1000 Z" fill="#9fd8ca"/>
+  <path d="M0 820 C210 735 430 825 650 750 C880 670 1050 805 1260 735 C1425 680 1530 705 1600 688 L1600 1000 L0 1000 Z" fill="#5bbca7"/>
+  <circle cx="1220" cy="190" r="82" fill="#ffd166"/>
+  <rect x="180" y="445" width="210" height="250" rx="12" fill="#ffffff" opacity="0.86"/>
+  <rect x="430" y="370" width="260" height="325" rx="12" fill="#ffffff" opacity="0.8"/>
+  <rect x="730" y="430" width="190" height="265" rx="12" fill="#ffffff" opacity="0.82"/>
+  <rect x="970" y="350" width="290" height="345" rx="12" fill="#ffffff" opacity="0.78"/>
+  <rect x="1300" y="470" width="160" height="225" rx="12" fill="#ffffff" opacity="0.84"/>
+  <g fill="#006366" opacity="0.26">
+    <rect x="220" y="485" width="38" height="44" rx="4"/>
+    <rect x="300" y="485" width="38" height="44" rx="4"/>
+    <rect x="500" y="420" width="46" height="48" rx="4"/>
+    <rect x="590" y="420" width="46" height="48" rx="4"/>
+    <rect x="790" y="480" width="42" height="46" rx="4"/>
+    <rect x="1038" y="405" width="50" height="52" rx="4"/>
+    <rect x="1146" y="405" width="50" height="52" rx="4"/>
+    <rect x="1348" y="515" width="42" height="44" rx="4"/>
+  </g>
+  <g fill="#263238" opacity="0.5">
+    <circle cx="255" cy="744" r="22"/>
+    <circle cx="325" cy="744" r="22"/>
+    <circle cx="520" cy="724" r="24"/>
+    <circle cx="590" cy="724" r="24"/>
+    <circle cx="1055" cy="724" r="24"/>
+    <circle cx="1130" cy="724" r="24"/>
+    <circle cx="1368" cy="740" r="22"/>
+  </g>
+</svg>

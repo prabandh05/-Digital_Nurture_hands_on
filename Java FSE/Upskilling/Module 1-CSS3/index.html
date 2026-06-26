@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal - CSS3</title>
+
+    <style>
+        body {
+            background-color: #eef7f6;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <nav aria-label="Main navigation">
+            <ul class="site-nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#bulletin">Bulletin</a></li>
+                <li><a href="#register">Register</a></li>
+            </ul>
+        </nav>
+
+        <div class="banner-content">
+            <p class="eyebrow">City Council Presents</p>
+            <h1 style="color: red;">Local Community Event Portal</h1>
+            <p class="hero-description">
+                Discover workshops, cultural programs, sports meets, and public updates happening across your neighborhood.
+            </p>
+            <a class="cta-button" href="#register">Join an Event</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="content-section">
+            <h2>Community Highlights</h2>
+            <div class="event-grid">
+                <article class="eventCard">
+                    <h3>Music Night</h3>
+                    <p>Live performances from local artists at the central park amphitheater.</p>
+                    <span class="tag">Family Friendly</span>
+                </article>
+
+                <article class="eventCard selected-card">
+                    <h3>Wellness Workshop</h3>
+                    <p>Guided health sessions, nutrition talks, and free basic health screening.</p>
+                    <span class="tag">Popular</span>
+                </article>
+
+                <article class="eventCard">
+                    <h3>Sports Meet</h3>
+                    <p>Friendly football, badminton, and track events for residents of all ages.</p>
+                    <span class="tag">Outdoor</span>
+                </article>
+            </div>
+        </section>
+
+        <section id="events" class="content-section">
+            <h2>Event Categories</h2>
+            <img class="event-poster" src="assets/community-bg.svg" alt="Illustration of local community buildings and residents">
+            <ul class="category-list">
+                <li>Arts and culture programs</li>
+                <li>Sports and wellness activities</li>
+                <li>Volunteer and civic awareness drives</li>
+            </ul>
+        </section>
+
+        <section id="schedule" class="content-section">
+            <h2>Admin Event Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Venue</th>
+                        <th>Seats</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Music Night</td>
+                        <td>July 12, 2026</td>
+                        <td>Central Park</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Wellness Workshop</td>
+                        <td>July 18, 2026</td>
+                        <td>Community Hall</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>Sports Meet</td>
+                        <td>July 25, 2026</td>
+                        <td>City Stadium</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Clean City Drive</td>
+                        <td>August 2, 2026</td>
+                        <td>Ward Office</td>
+                        <td>80</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="boxModel" class="content-section">
+            <h2>Box Model Demo</h2>
+            <div class="eventCard">
+                <h3>Selected Event Card</h3>
+                <p>This card uses margin, padding, border, and outline-ready spacing for inspection in DevTools.</p>
+            </div>
+
+            <div class="visibility-demo">
+                <p class="hidden-box">This paragraph uses visibility: hidden and still keeps its layout space.</p>
+                <p class="none-box">This paragraph uses display: none and is removed from layout flow.</p>
+                <p>The visible line shows the difference in spacing between hidden and display-none elements.</p>
+            </div>
+        </section>
+
+        <section id="bulletin" class="content-section">
+            <h2>Community Bulletin</h2>
+            <article class="news-article">
+                <p>
+                    The city council invites residents to participate in the monthly neighborhood forum. Updates include road safety work,
+                    park maintenance, library programs, and new volunteering opportunities. Residents can submit questions before the meeting
+                    or speak directly during the open discussion session.
+                </p>
+                <p>
+                    Local clubs are also coordinating cultural performances, weekend reading circles, and sports coaching for students.
+                    Notices will be refreshed every Friday at the ward office and on the community portal.
+                </p>
+            </article>
+        </section>
+
+        <section id="register" class="content-section">
+            <h2>Register for an Event</h2>
+            <form>
+                <label for="name">Name</label>
+                <input id="name" class="selected-field" type="text" placeholder="Enter your name" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="name@example.com" required>
+
+                <label for="eventType">Event Type</label>
+                <select id="eventType">
+                    <option>Music</option>
+                    <option>Sports</option>
+                    <option>Workshop</option>
+                    <option>Volunteer Drive</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Tell us about your interest"></textarea>
+
+                <button class="cta-button" type="submit">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Community Portal</p>
+    </footer>
+</body>
+</html>
