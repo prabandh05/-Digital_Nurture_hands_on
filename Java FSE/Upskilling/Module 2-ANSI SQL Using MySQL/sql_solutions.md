@@ -1,13 +1,4 @@
 # ANSI SQL Using MySQL — Exercise Solutions
-
-
-
-
-
-Notes:
-- Replace table/column names if your schema differs.
-- Date arithmetic uses MySQL functions (e.g., `CURDATE()`, `DATE_SUB`).
-
 ---
 
 ## 1. User Upcoming Events
