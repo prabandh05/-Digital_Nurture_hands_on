@@ -1,13 +1,8 @@
 # ANSI SQL Using MySQL — Exercise Solutions
 
-This file contains SQL queries (MySQL-compatible) for the exercises in the Module 2 workbook. They assume the following table names and columns:
 
-- `users` (`user_id`, `full_name`, `email`, `city`, `registration_date`)
-- `events` (`event_id`, `title`, `description`, `city`, `start_date`, `end_date`, `status`, `organizer_id`)
-- `sessions` (`session_id`, `event_id`, `title`, `speaker_name`, `start_time`, `end_time`)
-- `registrations` (`registration_id`, `user_id`, `event_id`, `registration_date`)
-- `feedback` (`feedback_id`, `user_id`, `event_id`, `rating`, `comments`, `feedback_date`)
-- `resources` (`resource_id`, `event_id`, `resource_type`, `resource_url`, `uploaded_at`)
+
+
 
 Notes:
 - Replace table/column names if your schema differs.
@@ -372,4 +367,3 @@ WHERE s.session_id IS NULL;
 
 ---
 
-If you want, I can also generate a SQL file with these queries or run simple validations. Would you like that?
